@@ -4,11 +4,11 @@ import "primereact/resources/themes/vela-purple/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import PrimeReact from "primereact/api";
+import { Sidebar } from "primereact/sidebar";
 import convert from "react-from-dom";
 import useMouse from "./components/hook/useMouse";
 import makerjs from "makerjs";
 import logo from "./logo.svg";
-import "./App.css";
 import { Button } from "primereact/button";
 
 PrimeReact.ripple = true;
@@ -46,8 +46,9 @@ function App() {
         <p>Hello Igor</p>
         <Button
           label="Click"
-          className="p-button-outlined p-button-text p-button-primary p-button-md p-text-secondary"
+          className="p-button-outlined  p-button-secondary p-button-lg "
         />
+
         <p>
           <button onClick={() => setCount((count) => count + 1)}>
             count is: {count}
